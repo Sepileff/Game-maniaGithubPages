@@ -1,0 +1,242 @@
+/* CSS Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:0;
+}
+header {
+    background-color: white;
+    height: 119px;
+}
+
+.container-grid {
+    width: 1250px;
+    margin: 0 auto;
+    background-color:white;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+#barras {
+    display: none;
+}
+
+.icone-menu{
+    height: 40px;
+}
+.logo{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannerDecorativo {
+    height: 110px;
+    background-image: url(img/coin-4180241__480\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imagem-banner-promocao {
+    width: 700px;
+    justify-content: space-between 
+}
+
+.posicao-texto{
+    width: 100px;
+    justify-content: space-between;
+}
+
+.banner-texto-promocao {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: center;
+    
+}
+
+.conteudoTexto {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+   
+}
+.conteudoTexto p {
+    color: black;
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.conteudoTexto button {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: "Roboto";
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faixa-separacaao {
+    background-color: aliceblue;
+    white-space: 100%;
+}
+
+.conteudoTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.posicao-texto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+   
+    
+}
+.pocisao-produtos{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}   
+
+.pocisao-produtos2 {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+
+.bannerDecorativo2 {
+    height: 110px;
+    background-image: url(img/coin-4180241__480\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 5px;
+    border-color: black;
+}
+
+.footer {
+    background-color: white;
+    width: 100%;   
+}
+
+.rodape-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    text-decoration: none;
+    font-size: 20;
+}
+.rodape-info a{
+    text-decoration: none;
+    display: block;
+    
+    
+    font-size: 13px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: solid;
+    font-family: 'Times New Roman', Times, serif;
+
+
+    display: block;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+@media screen and (max-width: 1000px) {
+    .cabecalho {
+        position: relative;
+
+    }
+    .menu {
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        left: 100px;
+
+        height: 400px;
+
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+        align-items: center;
+
+    }
+
+    .menu-ativo {
+        display: flex;
+    }
+    #barras {
+        display: inline-block;
+    }
+    
+}
+
+
+@media screen and (max-width: 1250px) {
+    .container-grid {
+        width: 90vw;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        right: 0px;
+        width: 230px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .imagem-banner-promocao {
+        display: none;
+    }
+
+    .posicao-texto {
+        width: 400px;
+    }
+    
+}
